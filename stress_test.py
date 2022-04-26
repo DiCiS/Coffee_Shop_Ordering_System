@@ -10,7 +10,6 @@ initial_pending_queue = []
 clear()
 
 pending, processing, fulfilled = initialize_data_structures(initial_pending_queue)
-#counter = 11
 
 coffee_kitchen = Kitchen(pending, processing, fulfilled, processing_queue_len)
 
@@ -59,7 +58,3 @@ print("\n")
 print_ord_wgt("Sequence in which orders were fulfilled  : ", list(coffee_kitchen.fulfilled.queue), type="ord")
 print()
 print("------------------------------------------------------------------------------------------------------------------------")
-#print()
-#print_ord_wgt("Sequence in which weights were received  : ", initial_sequence                    , type="wgt")
-#print("\n")
-#print_ord_wgt("Sequence in which weights were fulfilled : ", list(coffee_kitchen.fulfilled.queue), type="wgt")
